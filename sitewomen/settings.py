@@ -171,8 +171,6 @@ AUTH_USER_MODEL = 'users.User'
 
 DEFAULT_USER_IMAGE = MEDIA_URL + 'users/default.png'
 
-SOCIAL_AUTH_GITHUB_KEY = 'Ov23lipN8dxdwBASiUMC'
-SOCIAL_AUTH_GITHUB_SECRET = 'ac75ea4f19e13e5318780b72166d34810575d26f'
 
 SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.social_details',
