@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<p>{{ title }}</p>
+{% for p in page %}
+<p>{{ p.pk }} :{{ p }}
+{% endfor %}
+
+<nav>
+    <ul>
+        {% for n in page.paginator.page_range %}
+        <li>
+            <p><a href="?page={{ n }}">{{ n }}</a></p>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+
+
+
+{% endblock content %}
